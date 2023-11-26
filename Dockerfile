@@ -6,7 +6,7 @@
     RUN mvn clean package
 
     # Créer l'image de production pour SatisWeb
-    FROM openjdk:8-jre-slim
+    FROM openjdk:22-ea-17-nanoserver-1809
     COPY --from=build /selffocuslab/target/selfocuslabbackend-0.0.1-SNAPSHOT.jar /usr/local/lib/selfocuslabbackend.jar
     ENTRYPOINT ["java","-jar","/usr/local/lib/selfocuslabbackend.jar"]
 

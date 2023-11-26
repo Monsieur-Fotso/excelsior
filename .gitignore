@@ -18,3 +18,8 @@ buildNumber.properties
  .idea/
  *.iml
 
+.idea/compiler.xml
+*.xml
+*.xml
+.idea/workspace.xml
+.idea/compiler.xml
